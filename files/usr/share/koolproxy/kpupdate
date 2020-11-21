@@ -119,7 +119,6 @@ update_rules() {
 	         wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/easylistchina.txt' -q -O $KP_DIR/data/rules/easylistchina.txt
 		 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/antiad.txt' -q -O $KP_DIR/data/rules/antiad.txt
             	 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/mv.txt' -q -O $KP_DIR/data/rules/mv.txt
-		 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/ipsetadblock/dnsmasq.adblock' -q -O $KP_DIR/dnsmasq.adblock
 		 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/ipsetadblock/koolproxy_ipset.conf' -q -O $KP_DIR/koolproxy_ipset.conf
 		 easylist_rules_local=`cat /usr/share/koolproxy/data/rules/easylistchina.txt  | sed -n '3p'|awk '{print $3,$4}'`
                  fanboy_rules_local=`cat /usr/share/koolproxy/data/rules/fanboy.txt  | sed -n '3p'|awk '{print $3,$4}'`
