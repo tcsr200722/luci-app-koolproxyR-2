@@ -18,12 +18,11 @@ local c=luci.sys.exec("head -3 /usr/share/koolproxy/data/rules/daily.txt | grep 
 local s=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/easylistchina.txt | wc -l")
 local u=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/fanboy.txt | wc -l")
 local p=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/yhosts.txt | wc -l")
-local f=luci.sys.exec("cat /usr/share/koolproxy/data/rules/antiad.txt | wc -l")
-local t=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/chengfeng.txt | wc -l")
-local w=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/mv.txt | wc -l")
 local h=luci.sys.exec("grep -v '^!' /usr/share/koolproxy/data/rules/user.txt | wc -l")
 local l=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/koolproxy.txt | wc -l")
 local q=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/daily.txt | wc -l")
+local f=luci.sys.exec("cat /usr/share/koolproxy/data/rules/antiad.txt | wc -l")
+local g=luci.sys.exec("cat /usr/share/koolproxy/data/rules/chengfeng.txt | wc -l")
 local i=luci.sys.exec("cat /usr/share/koolproxy/dnsmasq.adblock | wc -l")
 
 
@@ -125,7 +124,7 @@ e.write = function()
 	luci.sys.call("/usr/share/koolproxy/kpupdate 2>&1 >/dev/null")
 	luci.http.redirect(luci.dispatcher.build_url("admin","services","koolproxy"))
 end
-e.description = translate(string.format("<font color=\"red\"><strong>更新订阅规则与Adblock Plus Hosts</strong></font><br /><font color=\"green\">ABP规则: %s条<br />Fanboy规则: %s条<br />Yhosts规则: %s条<br />Antiad规则: %s条<br />乘风规则: %s条<br />乘风视频: %s条<br />静态规则: %s条<br /> 视频规则: %s<br />每日规则: %s条<br />自定义规则: %s条<br />Host: %s条</font><br />", s, u, p,f,t,w,l,b,q,h, i))
+e.description = translate(string.format("<font color=\"red\"><strong>更新订阅规则与Adblock Plus Hosts</strong></font><br /><font color=\"green\">ABP规则: %s条<br />Fanboy规则: %s条<br />Yhosts规则: %s条<br />Anatiad规则: %s条<br />乘风规则: %s条<br />静态规则: %s条<br /> 视频规则: %s<br />每日规则: %s条<br />自定义规则: %s条<br />Host: %s条</font><br />", s, u, p,f,g,l,b,q,h, i))
 t:tab("cert",translate("Certificate Management"))
 
 e=t:taboption("cert",DummyValue,"c1status",translate("<div align=\"left\">Certificate Restore</div>"))
@@ -396,5 +395,7 @@ function(o,a,i)
 	end
 end
 )
-
+t=o:section(TypedSection,"rss_rules",translate("技术支持"))
+t.anonymous = true
+t:append(Template("koolproxy/feedback"))
 return o
