@@ -18,3 +18,6 @@ config rss_rule
 	option load '1'
 	option name 'kpr_our_rule'
 	option url 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/kpr_our_rule.txt'
+
+config rss_rules
+	option load '1'
