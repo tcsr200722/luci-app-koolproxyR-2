@@ -124,11 +124,13 @@ update_rules() {
                  fanboy_rules_local=`cat /usr/share/koolproxy/data/rules/fanboy.txt  | sed -n '3p'|awk '{print $3,$4}'`
                  replenish_rules_local=`cat /usr/share/koolproxy/data/rules/yhosts.txt | sed -n '2p' | cut -d "=" -f2`
 		 koolproxy_rules_local=`cat /usr/share/koolproxy/data/rules/koolproxy.txt  | sed -n '3p'|awk '{print $3,$4}'`
+		 chengfeng_rules_local=`cat /usr/share/koolproxy/data/rules/chengeng.txt  | sed -n '3p'|awk '{print $3,$4}'
                  mv_rules_local=`cat /usr/share/koolproxy/data/rules/mv.txt  | sed -n '3p'|awk '{print $3,$4}'
                  echo $(date "+%F %T"): -------------------easylist version $easylist_rules_local >>$LOGFILE
                  echo $(date "+%F %T"): -------------------fanboy   version $fanboy_rules_local >>$LOGFILE
                  echo $(date "+%F %T"): -------------------yhosts   version $replenish_rules_local >>$LOGFILE
 		 echo $(date "+%F %T"): -------------------koolproxy version $koolproxy_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------chengfeng   version $chengfeng_rules_local >>$LOGFILE
 		 echo $(date "+%F %T"): -------------------mv   version $mv_rules_local >>$LOGFILE
 	         echo $(date "+%F %T"): ------------------- 内置规则更新成功！ ------------------- >>$LOGFILE
                 RESTART_KOOLPROXY=true
