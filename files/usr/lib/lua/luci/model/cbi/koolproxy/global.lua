@@ -32,8 +32,8 @@ else
 	status = translate("<strong><font color=\"red\">KoolProxyR plus+  已停止</font></strong>")
 end
 
-o = Map("koolproxy", translate("KoolProxyR plus+ "), translate("KoolProxyR plus+是能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告 <br /><font color=\"red\"><br /></font>"))
 
+o = Map("koolproxy", "<font color='green'>" .. translate("KoolProxyR plus+ ") .."</font>",     "<font color='purple'>" .. translate( "KoolProxyR plus+是能识别adblock规则的代理软件，可以过滤普通网页广告、视频广告、HTTPS广告<br />Adblock Plus 的 Host 列表 + KoolProxy 黑名单模式运行更流畅上网体验，开启全局模式获取更好的过滤效果<br />如果要为客户端过滤https广告，必须在客户端安装根证书。") .."</font>")
 
 t = o:section(TypedSection, "global")
 t.anonymous = true
