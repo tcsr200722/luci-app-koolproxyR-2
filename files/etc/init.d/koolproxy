@@ -198,7 +198,7 @@ load_user_rules() {
 }
 
 load_rules() {
-	sed -i '1,10s/1/0/g' $KP_DIR/data/source.list
+	sed -i '1,11s/1/0/g' $KP_DIR/data/source.list
 
 	local rulelist="$(uci -q get koolproxy.@global[0].koolproxy_rules)"
 	for rule in $rulelist
@@ -210,10 +210,10 @@ load_rules() {
 			kp.dat)
 				sed -i '2s/0/1/g' $KP_DIR/data/source.list
 			;;
-                        daily.txt)
+                                                   daily.txt)
 				sed -i '3s/0/1/g' $KP_DIR/data/source.list
 			;;
-                        koolproxy.txt)
+                                                   koolproxy.txt)
 				sed -i '4s/0/1/g' $KP_DIR/data/source.list
 			;;
 			user.txt)
@@ -228,9 +228,13 @@ load_rules() {
 			antiad.txt)
 				sed -i '8s/0/1/g' $KP_DIR/data/source.list
 			;;
-		        mv.txt)
+			chengfeng.txt)
 				sed -i '9s/0/1/g' $KP_DIR/data/source.list
 			;;
+		        mv.txt)
+				sed -i '10s/0/1/g' $KP_DIR/data/source.list
+			;;
+			
 		esac
 	done
 
@@ -238,8 +242,8 @@ load_rules() {
 	for rule in $rulelist
 	do
 		case "$rule" in
-			chengfeng.txt)
-				sed -i '10s/0/1/g' $KP_DIR/data/source.list
+			qita.txt)
+				sed -i '11s/0/1/g' $KP_DIR/data/source.list
 			;;
 		esac
 	done
