@@ -204,19 +204,28 @@ load_rules() {
 	for rule in $rulelist
 	do
 		case "$rule" in
-			yhosts.txt)
+			kp.dat)
 				sed -i '1s/0/1/g' $KP_DIR/data/source.list
 			;;
-			kp.dat)
+                                                   daily.txt)
 				sed -i '2s/0/1/g' $KP_DIR/data/source.list
 			;;
-                                                   daily.txt)
+                                                   koolproxy.txt)
 				sed -i '3s/0/1/g' $KP_DIR/data/source.list
 			;;
-                                                   koolproxy.txt)
+			user.txt)
 				sed -i '4s/0/1/g' $KP_DIR/data/source.list
 			;;
-			user.txt)
+			
+			
+		esac
+	done
+
+	local rulelist="$(uci -q get koolproxy.@global[0].thirdparty_rules)"
+	for rule in $rulelist
+	do
+		case "$rule" in
+			yhosts.txt)
 				sed -i '5s/0/1/g' $KP_DIR/data/source.list
 			;;
 			easylistchina.txt)
@@ -233,17 +242,6 @@ load_rules() {
 			;;
 		        mv.txt)
 				sed -i '10s/0/1/g' $KP_DIR/data/source.list
-			;;
-			
-		esac
-	done
-
-	local rulelist="$(uci -q get koolproxy.@global[0].thirdparty_rules)"
-	for rule in $rulelist
-	do
-		case "$rule" in
-			qita.txt)
-				sed -i '11s/0/1/g' $KP_DIR/data/source.list
 			;;
 		esac
 	done
