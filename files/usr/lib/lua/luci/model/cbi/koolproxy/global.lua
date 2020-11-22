@@ -57,7 +57,7 @@ e.datatype = "uinteger"
 e.default = 0
 e.rmempty = false
 
-e = t:taboption("base", ListValue, "koolproxy_mode", translate("Filter Mode"))
+e = t:taboption("base", ListValue, "koolproxy_mode", translate("过滤模式"))
 e.default = 1
 e.rmempty = false
 e:value(1, translate("全局模式"))
@@ -127,13 +127,13 @@ end
 e.description = translate(string.format("<font color=\"red\"><strong>更新订阅规则与Adblock Plus Hosts</strong></font><br /><font color=\"green\">ABP规则: %s条<br />Fanboy规则: %s条<br />Yhosts规则: %s条<br />Anatiad规则: %s条<br />乘风规则: %s条<br />静态规则: %s条<br /> 视频规则: %s<br />每日规则: %s条<br />自定义规则: %s条<br />Host: %s条</font><br />", s, u, p,f,g,l,b,q,h, i))
 t:tab("cert",translate("Certificate Management"))
 
-e=t:taboption("cert",DummyValue,"c1status",translate("<div align=\"left\">Certificate Restore</div>"))
+e=t:taboption("cert",DummyValue,"c1status",translate("<div align=\"left\">恢复证书</div>"))
 e=t:taboption("cert",FileUpload,"")
 e.template="koolproxy/caupload"
 e=t:taboption("cert",DummyValue,"",nil)
 e.template="koolproxy/cadvalue"
 if nixio.fs.access("/usr/share/koolproxy/data/certs/ca.crt")then
-	e=t:taboption("cert",DummyValue,"c2status",translate("<div align=\"left\">Certificate Backup</div>"))
+	e=t:taboption("cert",DummyValue,"c2status",translate("<div align=\"left\">证书备份</div>"))
 	e=t:taboption("cert",Button,"certificate")
 	e.inputtitle=translate("Backup Download")
 	e.inputstyle="reload"
@@ -171,7 +171,7 @@ function e.write(self, section, value)
 	fs.remove("/tmp/adbypass")
 end
 
-t:tab("weblist",translate("Set Backlist Of Websites"))
+t:tab("weblist",translate("网站黑名单设置"))
 
 local i = "/etc/adblocklist/adblock"
 e = t:taboption("weblist", TextValue, "adblock_domain")
