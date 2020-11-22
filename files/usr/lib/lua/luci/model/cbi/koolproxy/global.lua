@@ -33,7 +33,7 @@ else
 end
 
 
-o = Map("koolproxy", "<font color='green'>" .. translate("KoolProxyR plus+ ") .."</font>",     "<font color='purple'>" .. translate( "KoolProxyR plus+是能识别adblock规则的代理软件，可以过滤普通网页广告、视频广告、HTTPS广告<br />Adblock Plus 的 Host 列表 + KoolProxy 黑名单模式运行更流畅上网体验，开启全局模式获取更好的过滤效果<br />如果要为客户端过滤https广告，必须在客户端安装根证书。") .."</font>")
+o = Map("koolproxy", "<font color='green'>" .. translate("KoolProxyR plus+ ") .."</font>",     "<font color='purple'>" .. translate( "KoolProxyR plus+是能识别adblock规则的代理软件，可以过滤普通网页广告、视频广告、HTTPS广告！<br />Adblock Plus 的 Host 列表 + KoolProxy 黑名单模式运行更流畅上网体验，开启全局模式获取更好的过滤效果！<br />如果要为客户端过滤https广告，必须在客户端安装根证书。<a style="cursor:pointer;color: #4300ff;" onclick="window.open('https://shaoxia.xyz/post/koolproxyr%E6%8C%87%E5%8D%97/')">==跳转链接到KoolProxy使用教程贴==</a>") .."</font>")
 
 t = o:section(TypedSection, "global")
 t.anonymous = true
@@ -48,7 +48,7 @@ e.rmempty = false
 e = t:taboption("base", DummyValue, "koolproxy_status", translate("程序版本"))
 e.value = string.format("[ %s ]", v)
 
-e = t:taboption("base", Value, "startup_delay", translate("Startup Delay"))
+e = t:taboption("base", Value, "startup_delay", translate("启动延迟"))
 e:value(0, translate("Not enabled"))
 for _, v in ipairs({5, 10, 15, 25, 40}) do
 	e:value(v, translate("%u seconds") %{v})
