@@ -33,7 +33,7 @@ else
 end
 
 
-o = Map("koolproxy", translate("KoolProxyR plus+ "), translate("KoolProxyR plus+是能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告! <br /><font color=\"red\"><br /></font>"))
+o = Map("koolproxy", translate("KoolProxyR plus+ "), translate("KoolProxyR plus+是能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！<br />"))
 
 t = o:section(TypedSection, "global")
 t.anonymous = true
@@ -65,18 +65,22 @@ e:value(2, translate("IPSET模式"))
 e:value(3, translate("视频模式"))
 
 e = t:taboption("base", MultiValue, "koolproxy_rules", translate("内置规则"))
-e.optional = false
+e.optional = true
 e.rmempty = false
+e:value("koolproxy.txt", translate("静态规则"))
+e:value("daily.txt", translate("每日规则"))
+e:value("kp.dat", translate("视频规则"))
+e:value("user.txt", translate("自定义规则"))
+
+e = t:taboption("base", MultiValue, "thirdparty_rules", translate("第三方规则"))
+e.optional = true
+e.rmempty = true
 e:value("easylistchina.txt", translate("ABP规则"))
 e:value("fanboy.txt", translate("Fanboy规则"))
 e:value("yhosts.txt", translate("Yhosts规则"))
 e:value("antiad.txt", translate("Antiad规则"))
 e:value("chengfeng.txt", translate("乘风规则"))
 e:value("mv.txt", translate("乘风视频"))
-e:value("koolproxy.txt", translate("静态规则"))
-e:value("daily.txt", translate("每日规则"))
-e:value("kp.dat", translate("视频规则"))
-e:value("user.txt", translate("自定义规则"))
 
 e = t:taboption("base", ListValue, "koolproxy_port", translate("端口控制"))
 e.default = 0
