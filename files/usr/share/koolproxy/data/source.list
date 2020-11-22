@@ -1,6 +1,6 @@
-0|yhosts.txt|https://gitee.com/ledewrt/ledeproxy/raw/master/rules/yhosts.txt|Yhosts规则
 0|kp.dat|https://gitee.com/ledewrt/ledeproxy/raw/master/rules/kp.dat|视频规则
 0|user.txt||自定义规则
+0|yhosts.txt|https://gitee.com/ledewrt/ledeproxy/raw/master/rules/yhosts.txt|Yhosts规则
 0|easylistchina.txt|https://gitee.com/ledewrt/ledeproxy/raw/master/rules/easylistchina.txt|ABP规则
 0|fanboy.txt|https://ledewrt.coding.net/p/ledeproxy/d/rulebin/git/raw/master/rules/fanboy.txt|Fanboy规则
 0|antiad.txt|https://gitee.com/ledewrt/ledeproxy/raw/master/rules/antiad.txt|Anti-AD规则
