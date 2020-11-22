@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: Hj01HJs+NS0HoQF7dscA1A
-! Version: 202011210023
+! Checksum: x4d7YzS6D/73O5RxO2x/zQ
+! Version: 202011220033
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
 ||https://012.tw^$third-party
@@ -1595,6 +1595,7 @@
 ||https://baidu.com/forum/pic/item/7af40ad162d9f2d30361aab3beec8a136327cc7e.jpg
 ||https://baidu.com/forum/pic/item/9e3df8dcd100baa14e5258e25010b912c8fc2e68.jpg
 ||https://baidu.com/forum/pic/item/a044ad345982b2b7c044449a26adcbef77099b90.jpg
+||https://baidu.com/forum/pic/item/aec379310a55b319b1963d3754a98226cffc1700.jpg
 ||https://baidu.com/forum/pic/item/c2cec3fdfc039245b36885579094a4c27c1e258c.jpg
 ||https://baidu.com/forum/pic/item/d000baa1cd11728b45991441dffcc3cec3fd2c18.jpg
 ||https://baidu.com/forum/pic/item/e5dde71190ef76c6211836cc9316fdfaae51670b.jpg
@@ -3438,7 +3439,7 @@
 ||https://news18a.com/image/ad_ina/
 ||https://newsres.cn/temp/tempad
 ||https://newume.com/v1/data/ume-
-||https://newyx.net/j/down_yd.js
+||https://newyx.net^*/down_yd.js
 ||https://nex.163.com/q?
 ||https://nfmovies.com/pic/tu/*_863x59.
 ||https://nfmovies.com/pic/tu/*_banner
@@ -4561,6 +4562,7 @@
 ||https://yaolan.com/wenku_debris/time_debris/images/mary
 ||https://yaolanimage.cn/assets/ask/js/ask_video_popup.js
 ||https://yaolanimage.cn/cms/image/960-90
+||https://yaoyl.com/js/ds.js
 ||https://yaozui.com/ref/index?
 ||https://yaseok.com//static/src/images/loading.gif
 ||https://yatu.tv/m/images/*300_100
@@ -5010,7 +5012,7 @@
 ||https://akamaihd.net^*/sid.html?p=
 ||https://commondisplay-a.akamaihd.net/cri/*.htm?cat=
 ||https://hjfile.cn/analytics/site/TrackEvent.js
-||http://ak0429.com^
+||http://103.75.47.19^
 ||http://00-gov.cn^
 ||http://0024aaaa.com^
 ||http://00880808.com^
@@ -5516,6 +5518,7 @@
 ||http://ajaxcdn.org^
 ||http://ajhdf.com^$third-party
 ||http://ajuhd.com^
+||http://ak0429.com^
 ||http://akrwi.cn^
 ||http://alicmayuns.com^
 ||http://alifixed.cn^
@@ -7335,6 +7338,7 @@
 ||http://xn--xhq9mt12cf5v.top^
 ||http://xn--xhq9mt12cf5v.website^
 ||http://xnjpg.com^
+||http://xnmcmnt.cn^
 ||http://xp3366.com^$third-party
 ||http://xq12.com^$third-party
 ||http://xsdlq.cn^
@@ -7361,6 +7365,7 @@
 ||http://xxx55tp.com^*.gif
 ||http://xxyxmdq.cn^
 ||http://xxyzwtsylw.com^
+||http://xyad316ea.vip^
 ||http://xyad3hada.com^
 ||http://xyadaa.com^
 ||http://xyaddby.com^
@@ -7386,7 +7391,6 @@
 ||http://yanglaopt.net^
 ||http://yaohq.com^
 ||http://yaoxiaoli.com^
-||http://yaoyl.com^
 ||http://yatemy.cn^
 ||http://ycfgnau.cn^
 ||http://ychml.com^
@@ -8709,6 +8713,7 @@
 ||http://baidu.com/forum/pic/item/7af40ad162d9f2d30361aab3beec8a136327cc7e.jpg
 ||http://baidu.com/forum/pic/item/9e3df8dcd100baa14e5258e25010b912c8fc2e68.jpg
 ||http://baidu.com/forum/pic/item/a044ad345982b2b7c044449a26adcbef77099b90.jpg
+||http://baidu.com/forum/pic/item/aec379310a55b319b1963d3754a98226cffc1700.jpg
 ||http://baidu.com/forum/pic/item/c2cec3fdfc039245b36885579094a4c27c1e258c.jpg
 ||http://baidu.com/forum/pic/item/d000baa1cd11728b45991441dffcc3cec3fd2c18.jpg
 ||http://baidu.com/forum/pic/item/e5dde71190ef76c6211836cc9316fdfaae51670b.jpg
@@ -10789,7 +10794,7 @@
 ||http://news18a.com/image/ad_ina/
 ||http://newsres.cn/temp/tempad
 ||http://newume.com/v1/data/ume-
-||http://newyx.net/j/down_yd.js
+||http://newyx.net^*/down_yd.js
 ||http://nex.163.com/q?
 ||http://nfmovies.com/pic/tu/*_863x59.
 ||http://nfmovies.com/pic/tu/*_banner
@@ -12038,6 +12043,7 @@
 ||http://yaolan.com/wenku_debris/time_debris/images/mary
 ||http://yaolanimage.cn/assets/ask/js/ask_video_popup.js
 ||http://yaolanimage.cn/cms/image/960-90
+||http://yaoyl.com/js/ds.js
 ||http://yaozui.com/ref/index?
 ||http://yaseok.com//static/src/images/loading.gif
 ||http://yaseok.com/uploads/20*.gif
@@ -13173,6 +13179,7 @@
 ||http://hh010.com/static/image/fff/
 ||http://stunninglover.com^
 ||http://watakaw133.xyz^
+||http://ceai.xyz^
 ||http://01w47q.cn^
 ||http://0217qpineuxbcdhopswkvf.xyz^
 ||http://0224fqpowiuxybnmvdfghj.xyz^
@@ -14731,6 +14738,7 @@
 ||http://shorug.cn^
 ||http://shsnjj.top^
 ||http://shumilou.co/style/html5.js
+||http://shunxinyuancaiwu.cn^
 ||http://sibozhihui-lc.com^
 ||http://signstu.top^
 ||http://simarl.com^
@@ -16226,6 +16234,7 @@ https://ebc.net.tw###lotteryfnc
 https://nlc.gov.cn###lovexin12xx
 https://rising.cn###lowerrightAd
 https://my0511.com###lphybbschklogdiv
+https://mcbbs.net###lsform + .y
 https://antpedia.com###luxury_car
 https://playno1.com###m12
 https://playno1.com###m2
@@ -17235,6 +17244,7 @@ https://liba.com##.avdert1190
 https://dcloud.net.cn##.aw-ad-item
 https://yam.com##.axdBox
 https://kknews.cc,read01.com##.axslot
+https://tophub.today##.axx
 https://newsmth.net##.b-content > #sogou_banner:nth-child(3)
 https://360kan.com##.b-ifradjx
 https://gamer.com.tw##.b-list_ad
@@ -17435,7 +17445,6 @@ https://downyi.com##.bzYouDao
 https://mgtv.com##.c-95060-top
 https://sm.cn##.c-container > div[data-sc*="etao"]
 https://baidu.com##.c-container.ec-container
-https://tophub.today##.c-d.c-d-e > .qc:nth-child(3)
 https://3987.com##.c-gg
 https://baidu.com##.c-result[data-tpl="adv_wenku_fc"]
 https://suning.com##.c2c-recommend
@@ -17777,6 +17786,8 @@ https://home.ifeng.com##.fengjc02
 https://hao.360.cn##.festival_snatch
 https://firefoxchina.cn##.ff-banner
 https://firefoxchina.cn##.ff-open
+https://cn-healthcare.com##.fh_ad_wrap
+https://cn-healthcare.com##.fh_advent_wrap
 https://cngold.org##.fiexdAdvsClosed
 https://1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.firework-wrap
 https://1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.firework_sender_wrap
@@ -17951,7 +17962,7 @@ https://cmhello.com##.gpost-above
 https://iyaxin.com##.gr-ggtag
 https://owyb1688.com##.gray-show
 https://bioon.com##.grid_6
-https://veryhuo.com##.gs
+https://newyx.net,veryhuo.com##.gs
 https://veryhuo.com##.gs2
 https://wanyx.com##.gs_down_common
 https://sci-hub.org.cn##.gs_r[data-cid=""]
@@ -21536,6 +21547,7 @@ http://ebc.net.tw###lotteryfnc
 http://nlc.gov.cn###lovexin12xx
 http://rising.cn###lowerrightAd
 http://my0511.com###lphybbschklogdiv
+http://mcbbs.net###lsform + .y
 http://antpedia.com###luxury_car
 http://playno1.com###m12
 http://playno1.com###m2
@@ -22545,6 +22557,7 @@ http://liba.com##.avdert1190
 http://dcloud.net.cn##.aw-ad-item
 http://yam.com##.axdBox
 http://kknews.cc,read01.com##.axslot
+http://tophub.today##.axx
 http://newsmth.net##.b-content > #sogou_banner:nth-child(3)
 http://360kan.com##.b-ifradjx
 http://gamer.com.tw##.b-list_ad
@@ -22745,7 +22758,6 @@ http://downyi.com##.bzYouDao
 http://mgtv.com##.c-95060-top
 http://sm.cn##.c-container > div[data-sc*="etao"]
 http://baidu.com##.c-container.ec-container
-http://tophub.today##.c-d.c-d-e > .qc:nth-child(3)
 http://3987.com##.c-gg
 http://baidu.com##.c-result[data-tpl="adv_wenku_fc"]
 http://suning.com##.c2c-recommend
@@ -23087,6 +23099,8 @@ http://home.ifeng.com##.fengjc02
 http://hao.360.cn##.festival_snatch
 http://firefoxchina.cn##.ff-banner
 http://firefoxchina.cn##.ff-open
+http://cn-healthcare.com##.fh_ad_wrap
+http://cn-healthcare.com##.fh_advent_wrap
 http://cngold.org##.fiexdAdvsClosed
 http://1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.firework-wrap
 http://1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.firework_sender_wrap
@@ -23261,7 +23275,7 @@ http://cmhello.com##.gpost-above
 http://iyaxin.com##.gr-ggtag
 http://owyb1688.com##.gray-show
 http://bioon.com##.grid_6
-http://veryhuo.com##.gs
+http://newyx.net,veryhuo.com##.gs
 http://veryhuo.com##.gs2
 http://wanyx.com##.gs_down_common
 http://sci-hub.org.cn##.gs_r[data-cid=""]
