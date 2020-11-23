@@ -48,7 +48,7 @@ e.rmempty = false
 e = t:taboption("base", DummyValue, "koolproxy_status", translate("程序版本"))
 e.value = string.format("[ %s ]", v)
 
-e = t:taboption("base", Value, "startup_delay", translate("Startup Delay"))
+e = t:taboption("base", Value, "startup_delay", translate("启动延迟"))
 e:value(0, translate("Not enabled"))
 for _, v in ipairs({5, 10, 15, 25, 40}) do
 	e:value(v, translate("%u seconds") %{v})
@@ -57,7 +57,7 @@ e.datatype = "uinteger"
 e.default = 0
 e.rmempty = false
 
-e = t:taboption("base", ListValue, "koolproxy_mode", translate("Filter Mode"))
+e = t:taboption("base", ListValue, "koolproxy_mode", translate("过滤模式"))
 e.default = 1
 e.rmempty = false
 e:value(1, translate("全局模式"))
