@@ -325,9 +325,9 @@ e.width="20%"
 e.default=1
 e.rmempty=false
 e:value(0,translate("不过滤"))
-e:value(1,translate("http only"))
-e:value(2,translate("http + https"))
-e:value(3,translate("full port"))
+e:value(1,translate("过滤 HTTP"))
+e:value(2,translate("过滤HTTP + HTTPS"))
+e:value(3,translate("过滤全端口"))
 
 t=o:section(TypedSection,"rss_rule",translate("KoolProxyR 规则订阅"), translate("请确保订阅规则的兼容性"))
 t.anonymous=true
