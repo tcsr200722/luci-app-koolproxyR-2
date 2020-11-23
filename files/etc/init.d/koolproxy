@@ -198,24 +198,25 @@ load_user_rules() {
 }
 
 load_rules() {
-	sed -i '1,7s/1/0/g' $KP_DIR/data/source.list
+	sed -i '1,9s/1/0/g' $KP_DIR/data/source.list
 
 	local rulelist="$(uci -q get koolproxy.@global[0].koolproxy_rules)"
 	for rule in $rulelist
 	do
 		case "$rule" in
-			kp.dat)
+			koolproxy.txt)
 				sed -i '1s/0/1/g' $KP_DIR/data/source.list
 			;;
-                         daily.txt)
+			kp.dat)
 				sed -i '2s/0/1/g' $KP_DIR/data/source.list
 			;;
-			user.txt)
+                        daily.txt)
 				sed -i '3s/0/1/g' $KP_DIR/data/source.list
 			;;
-                         koolproxy.txt)
+			user.txt)
 				sed -i '4s/0/1/g' $KP_DIR/data/source.list
-			;;			
+			;;
+	
 		esac
 	done
 
