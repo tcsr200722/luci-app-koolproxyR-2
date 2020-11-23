@@ -114,22 +114,26 @@ update_rules() {
 	         wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/kp.dat' -q -O $KP_DIR/data/rules/kp.dat
             	 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/daily.txt' -q -O $KP_DIR/data/rules/daily.txt
 		 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
+		 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/user.txt' -q -O $KP_DIR/data/user.txt
+                 cp $KP_DIR/data/user.txt $KP_DIR/data/rules/user.txt
 	         wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/yhosts.txt' -q -O $KP_DIR/data/rules/yhosts.txt
             	 wget 'https://ledewrt.coding.net/p/ledeproxy/d/rulebin/git/raw/master/rules/fanboy.txt' -q -O $KP_DIR/data/rules/fanboy.txt
 	         wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/easylistchina.txt' -q -O $KP_DIR/data/rules/easylistchina.txt
 		 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/antiad.txt' -q -O $KP_DIR/data/rules/antiad.txt
             	 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/mv.txt' -q -O $KP_DIR/data/rules/mv.txt
-		 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/rules/user.txt' -O files/usr/share/koolproxy/data/user.txt
-                 cp files/usr/share/koolproxy/data/user.txt files/usr/share/koolproxy/data/rules/user.txt
 		 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/ipsetadblock/koolproxy_ipset.conf' -q -O $KP_DIR/koolproxy_ipset.conf
+		 yhosts_rules_local=`cat /usr/share/koolproxy/data/rules/yhosts.txt | sed -n '1p' | cut -d "=" -f2`
 		 easylist_rules_local=`cat /usr/share/koolproxy/data/rules/easylistchina.txt  | sed -n '3p'|awk '{print $3,$4}'`
                  fanboy_rules_local=`cat /usr/share/koolproxy/data/rules/fanboy.txt  | sed -n '3p'|awk '{print $3,$4}'`
+		 antiad_rules_local=`cat /usr/share/koolproxy/data/rules/antiad.txt  | sed -n '2p' | cut -d "=" -f2`
 		 koolproxy_rules_local=`cat /usr/share/koolproxy/data/rules/koolproxy.txt  | sed -n '3p'|awk '{print $3,$4}'`
                  mv_rules_local=`cat /usr/share/koolproxy/data/rules/mv.txt  | sed -n '3p'|awk '{print $3,$4}'`
-                 echo $(date "+%F %T"): -------------------easylist version $easylist_rules_local >>$LOGFILE
-                 echo $(date "+%F %T"): -------------------fanboy   version $fanboy_rules_local >>$LOGFILE
-		 echo $(date "+%F %T"): -------------------koolproxy   version $koolproxy_rules_local >>$LOGFILE
-		 echo $(date "+%F %T"): -------------------mv   version $mv_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------Yhosts规则 version $yhosts_rules_local >>$LOGFILE
+                 echo $(date "+%F %T"): -------------------ABP规则 version $easylist_rules_local >>$LOGFILE
+                 echo $(date "+%F %T"): -------------------Fanboy规则 version $fanboy_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------Antiad规则 version $antiad_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------静态规则 version $koolproxy_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------乘风视频 version $mv_rules_local >>$LOGFILE
                  echo $(date "+%F %T"): ------------------- 内置规则更新成功！ ------------------- >>$LOGFILE
                 RESTART_KOOLPROXY=true
 
