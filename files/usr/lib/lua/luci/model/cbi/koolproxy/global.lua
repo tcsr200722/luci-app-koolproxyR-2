@@ -33,7 +33,7 @@ else
 end
 
 
-o = Map("koolproxy", translate("KoolProxyR plus+ "), translate("KoolProxyR plus+是能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！<br />"))
+o = Map("koolproxy", translate("KoolProxyR plus+ "), translate("KoolProxyR plus+是能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！"))
 
 t = o:section(TypedSection, "global")
 t.anonymous = true
