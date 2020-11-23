@@ -123,14 +123,10 @@ update_rules() {
 		 wget 'https://gitee.com/ledewrt/ledeproxy/raw/master/ipsetadblock/koolproxy_ipset.conf' -q -O $KP_DIR/koolproxy_ipset.conf
 		 easylist_rules_local=`cat /usr/share/koolproxy/data/rules/easylistchina.txt  | sed -n '3p'|awk '{print $3,$4}'`
                  fanboy_rules_local=`cat /usr/share/koolproxy/data/rules/fanboy.txt  | sed -n '3p'|awk '{print $3,$4}'`
-                 yhosts_rules_local=`cat /usr/share/koolproxy/data/rules/yhosts.txt | sed -n '1p' | cut -d "=" -f2`
-		 koolproxy_rules_local=`cat /usr/share/koolproxy/data/rules/koolproxy.txt  | sed -n '3p'|awk '{print $3,$4}'`
-                 mv_rules_local=`cat /usr/share/koolproxy/data/rules/mv.txt  | sed -n '3p'|awk '{print $3,$4}' 
-                 echo $(date "+%F %T"): -------------------ABP(easylist) version $easylist_rules_local >>$LOGFILE
-                 echo $(date "+%F %T"): -------------------Fanboy   version $fanboy_rules_local >>$LOGFILE
-                 echo $(date "+%F %T"): -------------------Yhosts   version $yhosts_rules_local >>$LOGFILE
-		 echo $(date "+%F %T"): -------------------koolproxy version $koolproxy_rules_local >>$LOGFILE
-		 echo $(date "+%F %T"): -------------------mv   version $mv_rules_local >>$LOGFILE
+                 replenish_rules_local=`cat /usr/share/koolproxy/data/rules/yhosts.txt | sed -n '2p' | cut -d "=" -f2`
+                 echo $(date "+%F %T"): -------------------easylist version $easylist_rules_local >>$LOGFILE
+                 echo $(date "+%F %T"): -------------------fanboy   version $fanboy_rules_local >>$LOGFILE
+                 echo $(date "+%F %T"): -------------------yhosts   version $replenish_rules_local >>$LOGFILE
 	         echo $(date "+%F %T"): ------------------- 内置规则更新成功！ ------------------- >>$LOGFILE
                 RESTART_KOOLPROXY=true
 
