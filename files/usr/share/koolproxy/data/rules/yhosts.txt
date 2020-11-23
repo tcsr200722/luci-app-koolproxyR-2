@@ -1,4 +1,4 @@
-!version=2020011162106
+!version=2020011221325
 !-----Test
 ||https://at.umeng.com
 ||https://adfurikun.jp
@@ -3975,6 +3975,7 @@
 ||https://hhy.betway8118.com
 ||https://hiadscvd.cezici.cn
 ||https://hipersushiads.com
+||https://hj.xayjx.cn
 ||https://hjk.sygjls.com
 ||https://hgra.ukmaaub.cn
 ||https://hl.kuzu.com
@@ -5185,6 +5186,7 @@
 ||https://m.vh92e.cn
 ||https://m.vhuay.com
 ||https://m.vichc.com
+||https://m.vipxer.cn
 ||https://m.vjuei.com
 ||https://m.vjuer.com
 ||https://m.vkjnd.com
@@ -9103,7 +9105,7 @@
 ||https://j.credit.wwz114.cn
 ||https://y.one.impact-ad.net
 ||https://adsmind.gdtimg.com
-!version=2020011162106
+!version=2020011221325
 !-----Test
 ||http://at.umeng.com
 ||http://adfurikun.jp
@@ -13080,6 +13082,7 @@
 ||http://hhy.betway8118.com
 ||http://hiadscvd.cezici.cn
 ||http://hipersushiads.com
+||http://hj.xayjx.cn
 ||http://hjk.sygjls.com
 ||http://hgra.ukmaaub.cn
 ||http://hl.kuzu.com
@@ -14290,6 +14293,7 @@
 ||http://m.vh92e.cn
 ||http://m.vhuay.com
 ||http://m.vichc.com
+||http://m.vipxer.cn
 ||http://m.vjuei.com
 ||http://m.vjuer.com
 ||http://m.vkjnd.com

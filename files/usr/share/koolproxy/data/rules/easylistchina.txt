@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: x4d7YzS6D/73O5RxO2x/zQ
-! Version: 202011220033
+! Checksum: cqApnwSCcTISJfeiW7mI2g
+! Version: 202011230033
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
 ||https://012.tw^$third-party
@@ -4494,6 +4494,7 @@
 ||https://xinshijue6080.com/gg
 ||https://xinshijue6080.com/Runtime/js/
 ||https://xinshijuecn.com/js/home/
+||https://xinshuige.com/static/images/115AD.jpg
 ||https://xinwenren.com/index.php?m=poster&
 ||https://xinyi.com/Public/config/Couplet/Index39.js
 ||https://xinyi.com/Public/config/Couplet/Index40.js
@@ -4927,6 +4928,7 @@
 ||https://30sy.com/ucweb/
 ||https://31xiaoshuo.org^$script,~third-party
 ||https://33yq.com/static/1.
+||https://360xs.com/templates/html5/js/djtop.js
 ||https://55shuba.com/files/article/html/
 ||https://597txtt.com^*.php
 ||https://6ks.net^*.html$script
@@ -5012,7 +5014,6 @@
 ||https://akamaihd.net^*/sid.html?p=
 ||https://commondisplay-a.akamaihd.net/cri/*.htm?cat=
 ||https://hjfile.cn/analytics/site/TrackEvent.js
-||http://103.75.47.19^
 ||http://00-gov.cn^
 ||http://0024aaaa.com^
 ||http://00880808.com^
@@ -5053,6 +5054,7 @@
 ||http://100fenlm.com^
 ||http://103.249.111.179^$third-party
 ||http://103.249.254.113^
+||http://103.75.47.19^
 ||http://104.195.62.12^
 ||http://104.197.140.120^
 ||http://104.198.198.188^
@@ -11971,6 +11973,7 @@
 ||http://xinshijue6080.com/gg
 ||http://xinshijue6080.com/Runtime/js/
 ||http://xinshijuecn.com/js/home/
+||http://xinshuige.com/static/images/115AD.jpg
 ||http://xinwenren.com/index.php?m=poster&
 ||http://xinyi.com/Public/config/Couplet/Index39.js
 ||http://xinyi.com/Public/config/Couplet/Index40.js
@@ -13179,7 +13182,6 @@
 ||http://hh010.com/static/image/fff/
 ||http://stunninglover.com^
 ||http://watakaw133.xyz^
-||http://ceai.xyz^
 ||http://01w47q.cn^
 ||http://0217qpineuxbcdhopswkvf.xyz^
 ||http://0224fqpowiuxybnmvdfghj.xyz^
@@ -13264,6 +13266,7 @@
 ||http://333bj.cloud^
 ||http://33yq.com/static/1.
 ||http://35kds.com^
+||http://360xs.com/templates/html5/js/djtop.js
 ||http://360zuowen.net^
 ||http://365syt.cn^
 ||http://365yigou.cn^
@@ -13601,6 +13604,7 @@
 ||http://cdqjmc.com^
 ||http://cdxzcjz.cn^
 ||http://cdzimeijia.com^
+||http://ceai.xyz^
 ||http://ceiyo.com^
 ||http://cepegas.com^
 ||http://cewbeyy.com^
@@ -15271,6 +15275,7 @@
 ||http://zgwlbjy.cn^
 ||http://zhamm.cn^
 ||http://zhanjiangletian.com^
+||http://zhanlan5.cn^
 ||http://zhenben.cc/2000/
 ||http://zhengjsmd.cn^
 ||http://zhengzhoupengbo.com^
