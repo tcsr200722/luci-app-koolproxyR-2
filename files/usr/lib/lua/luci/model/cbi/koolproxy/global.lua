@@ -65,7 +65,7 @@ e:value(2, translate("IPSET模式"))
 e:value(3, translate("视频模式"))
 
 e = t:taboption("base", MultiValue, "koolproxy_rules", translate("内置规则"))
-e.optional = true
+e.optional = false
 e.rmempty = false
 e:value("koolproxy.txt", translate("静态规则"))
 e:value("daily.txt", translate("每日规则"))
