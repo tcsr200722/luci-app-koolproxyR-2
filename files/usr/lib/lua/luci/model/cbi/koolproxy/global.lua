@@ -27,9 +27,9 @@ local i=luci.sys.exec("cat /usr/share/koolproxy/dnsmasq.adblock | wc -l")
 
 
 if luci.sys.call("pidof koolproxy >/dev/null") == 0 then
-	status = translate("<strong><font color=\"green\">LedeProxy is Running</font></strong>")
+	status = translate("<strong><font color=\"green\">KoolProxy Plus+ is Running</font></strong>")
 else
-	status = translate("<strong><font color=\"red\">LedeProxy is Not Running</font></strong>")
+	status = translate("<strong><font color=\"red\">KoolProxy Plus+ is Not Running</font></strong>")
 end
 
 
