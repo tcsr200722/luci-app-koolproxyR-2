@@ -1,3 +1,5 @@
+这个是fork https://github.com/project-openwrt/luci-app-koolproxyR   的。2020年3月Ameykyl最后一次更新。
+
 ## 免责声明：
 KoolProxy 是一个免费软件，著作权归属 KoolProxy.com，用户可以非商业性地复制和使用 KoolProxy，但禁止将 KoolProxy 用于商业用途。
 KoolProxy 可以对 https 网络数据进行识别代理，使用 https 功能的用户需要自己提供相关证书，本程序提供的证书生成脚本仅供用户参考，证书的保密工作由用户自行负责。
