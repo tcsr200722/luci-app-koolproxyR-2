@@ -57,7 +57,7 @@ e.datatype = "uinteger"
 e.default = 0
 e.rmempty = false
 
-e = t:taboption("base", ListValue, "koolproxy_mode", translate("过滤模式"))
+e = t:taboption("base", ListValue, "koolproxy_mode", translate("Filter Mode))
 e.default = 1
 e.rmempty = false
 e:value(1, translate("全局模式"))
