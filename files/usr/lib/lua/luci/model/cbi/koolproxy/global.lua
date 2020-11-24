@@ -32,9 +32,7 @@ else
 	status = translate("<strong><font color=\"red\">KoolProxy Plus+ is Not Running</font></strong>")
 end
 
-
-o = Map("koolproxy", translate("KoolProxy"), translate("A powerful advertisement blocker. "))
-
+o = Map("koolproxy", translate("KoolProxyR plus+ "), translate("KoolProxyR plus+是能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！"))
 t = o:section(TypedSection, "global")
 t.anonymous = true
 t.description = translate(string.format("%s<br /><br />", status))
@@ -48,7 +46,7 @@ e.rmempty = false
 e = t:taboption("base", DummyValue, "koolproxy_status", translate("程序版本"))
 e.value = string.format("[ %s ]", v)
 
-e = t:taboption("base", Value, "startup_delay", translate("Startup Delay"))
+e = t:taboption("base", Value, "startup_delay", translate("启动延迟"))
 e:value(0, translate("Not enabled"))
 for _, v in ipairs({5, 10, 15, 25, 40}) do
 	e:value(v, translate("%u seconds") %{v})
@@ -154,7 +152,7 @@ t:tab("white_weblist",translate("网站白名单设置"))
 
 local i = "/etc/adblocklist/adbypass"
 e = t:taboption("white_weblist", TextValue, "adbypass_domain")
-e.description = translate("These had been joined websites will not usefilter.Please input the domain names of websites,every line can input only one website domain.For example,google.com.")
+e.description = translate("这些已经加入的网站将不会使用过滤器。请输入网站的域名，每行只能输入一个网站域名。例如google.com。")
 
 e.rows = 28
 e.wrap = "off"
@@ -181,7 +179,7 @@ t:tab("weblist",translate("Set Backlist Of Websites"))
 
 local i = "/etc/adblocklist/adblock"
 e = t:taboption("weblist", TextValue, "adblock_domain")
-e.description = translate("These had been joined websites will use filter,but only blacklist model.Please input the domain names of websites,every line can input only one website domain.For example,google.com.")
+e.description = translate("加入的网址将走广告过滤端口。只针对黑名单模式。只能输入WEB地址，如：google.com，每个地址一行。")
 
 e.rows = 28
 e.wrap = "off"
@@ -208,7 +206,7 @@ t:tab("white_iplist",translate("IP白名单设置"))
 
 local i = "/etc/adblocklist/adbypassip"
 e = t:taboption("white_iplist", TextValue, "adbypass_ip")
-e.description = translate("These had been joined ip addresses will use proxy, but only GFW model.Please input the ip address or ip address segment,every line can input only one ip address.For example,112.123.134.145/24 or 112.123.134.145.")
+e.description = translate("这些已加入的ip地址将使用代理，但只有GFW型号。请输入ip地址或ip地址段，每行只能输入一个ip地址。例如，112.123.134.145 / 24或112.123.134.145。")
 
 e.rows = 28
 e.wrap = "off"
@@ -235,7 +233,7 @@ t:tab("iplist",translate("IP黑名单设置"))
 
 local i = "/etc/adblocklist/adblockip"
 e = t:taboption("iplist", TextValue, "adblock_ip")
-e.description = translate("These had been joined ip addresses will not use filter.Please input the ip address or ip address segment,every line can input only one ip address.For example,112.123.134.145/24 or 112.123.134.145.")
+e.description = translate("这些已经加入的ip地址不会使用过滤器.请输入ip地址或ip地址段，每行只能输入一个ip地址。例如，112.123.134.145 / 24或112.123.134.145。")
 
 e.rows = 28
 e.wrap = "off"
