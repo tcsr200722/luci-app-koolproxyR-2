@@ -33,7 +33,7 @@ else
 end
 
 
-o = Map("koolproxy", translate("KoolProxy"), translate("A powerful advertisement blocker. <br /><font color=\"red\">Adblock Plus Host list + koolproxy Blacklist mode runs without loss of bandwidth due to performance issues.<br /></font>"))
+o = Map("koolproxy", translate("KoolProxy"), translate("A powerful advertisement blocker. "))
 
 t = o:section(TypedSection, "global")
 t.anonymous = true
@@ -57,7 +57,7 @@ e.datatype = "uinteger"
 e.default = 0
 e.rmempty = false
 
-e = t:taboption("base", ListValue, "koolproxy_mode", translate("Filter Mode))
+e = t:taboption("base", ListValue, "koolproxy_mode", translate("Filter Mode"))
 e.default = 1
 e.rmempty = false
 e:value(1, translate("全局模式"))
@@ -402,7 +402,7 @@ function(o,a,i)
 	end
 end
 )
-t=o:section(TypedSection,"rss_rules",translate("KoolProxyR 帮助支持"))
+t=o:section(TypedSection,"usetips",translate("KoolProxyR 帮助支持"))
 t.anonymous = true
 t:append(Template("koolproxy/feedback"))
 return o
