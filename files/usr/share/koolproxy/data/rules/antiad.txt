@@ -1,6 +1,6 @@
 !TITLE=anti-AD
-!VER=20201122093636
-!TOTAL_LINES=38144
+!VER=20201123191958
+!TOTAL_LINES=38143
 ||https://00-gov.cn
 ||https://kwcdn.000dn.com
 ||https://kwcscdn.000dn.com
@@ -16650,7 +16650,6 @@
 ||https://immunical.club
 ||https://imneinei.com
 ||https://imonomy.com
-||https://imop.com
 ||https://imounsos.com
 ||https://impact-ad.jp
 ||https://impactradius-event.com
