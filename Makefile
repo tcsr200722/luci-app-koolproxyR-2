@@ -65,7 +65,7 @@ define Package/luci-app-koolproxyR/install
 	$(INSTALL_DATA) ./files/usr/lib/lua/luci/controller/koolproxy.lua $(1)/usr/lib/lua/luci/controller/koolproxy.lua
 	$(INSTALL_DATA) ./files/usr/lib/lua/luci/view/koolproxy/* $(1)/usr/lib/lua/luci/view/koolproxy/
 	$(INSTALL_DATA) ./files/usr/lib/lua/luci/i18n
-	po2lmo ./po/zh-cn/koolproxy.po $(1)/usr/lib/lua/luci/i18n/koolproxy.zh-cn.lmo
+	po2lmo ./files/usr/lib/lua/luci/i18n/koolproxy.po $(1)/usr/lib/lua/luci/i18n/koolproxy.zh-cn.lmo
 	$(INSTALL_BIN) ./files/usr/sbin/* $(1)/usr/sbin/
 	$(INSTALL_BIN) ./files/usr/share/koolproxy/data/gen_ca.sh $(1)/usr/share/koolproxy/data/
 	$(INSTALL_DATA) ./files/usr/share/koolproxy/data/openssl.cnf $(1)/usr/share/koolproxy/data/
