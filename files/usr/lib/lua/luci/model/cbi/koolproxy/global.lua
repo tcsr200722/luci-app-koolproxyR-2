@@ -63,7 +63,6 @@ e:value(2, translate("IPSET模式"))
 e:value(3, translate("视频模式"))
 
 e = t:taboption("base", MultiValue, "koolproxy_rules", translate("内置规则"))
-e.description = translate(string.format("<font color=\"red\"><strong>必选其一，否则会报错。要过滤视频广告，必选“视频规则”。</strong></font>"))
 e.optional = false
 e.rmempty = false
 e:value("koolproxy.txt", translate("静态规则"))
@@ -72,7 +71,6 @@ e:value("kp.dat", translate("视频规则"))
 e:value("user.txt", translate("自定义规则"))
 
 e = t:taboption("base", MultiValue, "thirdparty_rules", translate("第三方规则"))
-e.description = translate(string.format("<font color=\"red\"><strong>可选规则。根据自己需求来适当选择，全选的话得看自己路由器的处理能力。</strong></font>"))
 e.optional = true
 e.rmempty = false
 e:value("easylistchina.txt", translate("ABP规则"))
