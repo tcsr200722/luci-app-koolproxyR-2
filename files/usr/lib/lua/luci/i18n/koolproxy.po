@@ -1,9 +1,6 @@
 msgid "A powerful advertisement blocker. "
 msgstr "KoolProxyR plus+是能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！"
 
-msgid "Adblock Plus Host list + koolproxy Blacklist mode runs without loss of bandwidth due to performance issues."
-msgstr "Adblock Plus的Host列表 + KoolProxy黑名单模式运行更流畅上网体验。"
-
 msgid "Startup Delay"
 msgstr "启动延迟"
 
