@@ -1,4 +1,4 @@
-!version=2020011221325
+!version=202011221325
 !-----Test
 ||https://at.umeng.com
 ||https://adfurikun.jp
@@ -9105,7 +9105,7 @@
 ||https://j.credit.wwz114.cn
 ||https://y.one.impact-ad.net
 ||https://adsmind.gdtimg.com
-!version=2020011221325
+!version=202011221325
 !-----Test
 ||http://at.umeng.com
 ||http://adfurikun.jp
