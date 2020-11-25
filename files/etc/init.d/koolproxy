@@ -207,16 +207,15 @@ load_rules() {
 			koolproxy.txt)
 				sed -i '1s/0/1/g' $KP_DIR/data/source.list
 			;;
-			kp.dat)
+			daily.txt)
 				sed -i '2s/0/1/g' $KP_DIR/data/source.list
 			;;
-                        daily.txt)
+			kp.dat)
 				sed -i '3s/0/1/g' $KP_DIR/data/source.list
 			;;
 			user.txt)
 				sed -i '4s/0/1/g' $KP_DIR/data/source.list
 			;;
-	
 		esac
 	done
 
